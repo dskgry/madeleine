@@ -1,0 +1,118 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif;
+}
+
+.mainContainer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.dialog-modal {
+    display: block;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.codeEditor {
+    left: 220px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+.exercises {
+    left: 0;
+    width: 220px;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    padding: 0 5px;
+}
+
+.editorMenu {
+    height: 25px;
+}
+
+button.runButton {
+    background: url(../img/run.png) no-repeat center;
+    width: 20px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+button.showTranspiledButton {
+    background: url(../img/details.png) no-repeat center;
+    width: 20px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.editorWrapper {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    bottom: 230px;
+    right: 0;
+}
+
+.codeResult {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 230px;
+    font-size: 12px;
+    border: 1px solid black;
+    border-bottom: none;
+    border-top: none;
+}
+
+.outputContent {
+    height: 210px;
+    overflow-y: scroll;
+    overflow-x: auto;
+}
+
+.outputHeader {
+    background: linear-gradient(to bottom, #e6e6e6 0%, #dddddd 100%);
+}
+
+.fail {
+    background: #ff8e8e;
+}
+
+.noScroll {
+    overflow: hidden;
+}
+
+.showTranspiledTextArea {
+    width: 570px;
+    height: 450px;
+}
+
+.loading {
+    background: rgba(0, 0, 0, 0.1) url(../img/ajax-loader.gif) no-repeat center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.exerciseTitle {
+    padding: 0 0 0 15px;
+    font-weight: bold;
+}
+
+select.fullWidth {
+    width: 100%;
+}
+
+.iFrame {
+    display: none;
+}
