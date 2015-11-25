@@ -10,7 +10,7 @@ export default class TestRunner extends Component {
             htmlTemplate: `<script src="lib/jasmine.js"></script>
                            <script src="lib/jasmine-html.js"></script>
                            <script src="lib/boot.js"></script>
-                           <script src="lib/madeleineJasmineRenderer.js"></script>`
+                           <script src="lib/MadeleineJasmineRenderer.js"></script>`
         }
     }
 
