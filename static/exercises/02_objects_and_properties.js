@@ -3,7 +3,7 @@ describe("", function () {
         expect(typeof window.customer).not.toBe("undefined");
     });
 
-    it("Set the firstName of you customer to 'Lars' on creation.", function () {
+    it("Add a property 'firstName' to your customer object. Set the firstName to 'Lars'.", function () {
         expect(window.customer.firstName).toBe("Lars");
     });
 

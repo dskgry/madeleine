@@ -11,11 +11,11 @@ describe("", function () {
         }
     });
 
-    it("Create a function 'addAll' that it returns the sum of ALL its arguments.", function () {
+    it("Create a function 'addAll' that returns the sum of ALL its arguments.", function () {
         expect(window.addAll(1, 2, 3, 4, 5)).toBe(15);
     });
 
-    it("Replace 'add' by 'addAll'. Remove the 'add' function and assign 'addAll' to the variable 'add'", function () {
+    it("Assign the addAll-function to a variable 'add'. Delete the 'add' function", function () {
         expect(window.add).toBe(window.addAll);
     });
 });
