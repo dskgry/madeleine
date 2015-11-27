@@ -9,17 +9,30 @@ describe("", function () {
         expect(window.categories).toContain("baz");
     });
 
-    it("Append another entry named 'foo' to the array.", function () {
-      expect(window.categories[3]).toBe("foo");
+    it("Append a number to the categories-array.", function () {
+        if (window.categories.length === 4) {
+            expect((typeof window.categories[3]).toLocaleLowerCase()).toBe("number");
+        } else {
+            expect((typeof window.categories[4]).toLocaleLowerCase()).toBe("number");
+        }
+
     });
 
-    it("Delete the 1st entry from the categories array.", function () {
-      if (window.categories[3] === "foo") {
-        expect(window.categories[0]).toBe(undefined);
-      }
+    it("Prepend a boolean entry to the categories-array.", function () {
+        expect(window.categories[0] === true || window.categories[0] === false).toBe(true);
     });
+
+    it("Create a copy of the categories-array and save it in a variable named 'catCopy'.", function () {
+        expect(window.catCopy instanceof Array).toBe(true);
+        expect(window.catCopy[0] === true || window.catCopy[0] === false).toBe(true);
+        expect(window.catCopy[1]).toBe("foo");
+        expect(window.catCopy[2]).toBe("bar");
+        expect(window.catCopy[3]).toBe("baz");
+        expect((typeof window.categories[4]).toLocaleLowerCase()).toBe("number");
+    });
+
 
     it("Create a variable `categoriesString` that contains comma-separated string of all categories.", function () {
-      expect(window.categoriesString.replace(" ", "")).toBe("bar,baz,foo");
+        expect(window.categoriesString.replace(" ", "")).toBe("bar,baz,foo");
     });
 });
