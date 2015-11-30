@@ -9,17 +9,19 @@ describe("", function () {
         expect(window.categories).toContain("baz");
     });
 
-    it("Append a number to the categories-array.", function () {
+    it("Append the number '42' to the categories-array.", function () {
         if (window.categories.length === 4) {
             expect((typeof window.categories[3]).toLocaleLowerCase()).toBe("number");
+            expect(window.categories[3]).toBe(42);
         } else {
             expect((typeof window.categories[4]).toLocaleLowerCase()).toBe("number");
+			expect(window.categories[4]).toBe(42);
         }
 
     });
 
-    it("Prepend a boolean entry to the categories-array.", function () {
-        expect(window.categories[0] === true || window.categories[0] === false).toBe(true);
+    it("Prepend the boolean entry 'false' to the categories-array.", function () {
+        expect(window.categories[0] === false).toBe(true);
     });
 
     it("Create a copy of the categories-array and save it in a variable named 'catCopy'.", function () {
@@ -32,7 +34,9 @@ describe("", function () {
     });
 
 
-    it("Create a variable `categoriesString` that contains comma-separated string of all categories.", function () {
-        expect(window.categoriesString.replace(" ", "")).toBe("bar,baz,foo");
+    it("Create a variable `categoriesString` that contains comma-separated string of all elementes of the 'categories'-array.", function () {
+		var result = window.categoriesString.replace(" ", "");
+		console.log(result);
+        expect(result).toBe("false,foo,bar,baz,42");
     });
 });
