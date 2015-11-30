@@ -42,5 +42,15 @@ export default [
         index: 8,
         display: "Prototypal inhertiance",
         fileName: "11_prototypal_inheritance.js"
+    },
+    {
+        index: 9,
+        display: "Contructors",
+        fileName: "12_constructors_private_functions.js"
+    },
+    {
+        index: 10,
+        display: "Classes",
+        fileName: "13_classes.js"
     }
 ];
