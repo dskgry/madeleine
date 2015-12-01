@@ -1,5 +1,5 @@
 describe("", function () {
-    it("Create a Person-constructor that takes firstName and lastName as parameters and saves them as properties of th class", function() {
+    it("Create a Person-constructor that takes firstName and lastName as parameters and saves them as properties of the class", function() {
       var lars = new Person("Lars", "Kölpin");
 
       expect(lars.firstName).toBe("Lars");
