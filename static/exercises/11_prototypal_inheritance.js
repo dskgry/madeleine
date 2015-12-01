@@ -1,5 +1,5 @@
 describe("", function () {
-    it("Create an object 'person' with the properties 'firstName' (string), 'lastName' (string) and 'age' (number) and a metho-function toString which" +
+    it("Create an object 'person' with the properties 'firstName' (string), 'lastName' (string) and 'age' (number) and a method-function toString which" +
         " returns all properties comma-separated", function () {
         var person = window.person;
         expect((typeof person).toLowerCase()).toBe("object");
