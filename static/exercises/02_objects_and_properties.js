@@ -3,8 +3,8 @@ describe("", function () {
         expect(typeof window.customer).not.toBe("undefined");
     });
 
-    it("Add a property 'name' to your customer object. Set the name to 'Lars Kölpin'.", function () {
-        expect(window.customer.name).toBe("Lars Kölpin");
+    it("Add a property 'name' to your customer object. Assign your name to the property.", function () {
+        expect((typeof window.customer.name).toLowerCase()).toBe("string");
     });
 
     it("Add a property 'address' to your customer object and assign an object with the properties 'street' and 'streetNumber' to it. Street must be a string," +

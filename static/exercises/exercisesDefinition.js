@@ -20,7 +20,7 @@ export default [
     },
     {
         index: 4,
-        display: "Functions",
+        display: "Normal Functions",
         fileName: "06_functions.js"
     },
     {
@@ -28,29 +28,29 @@ export default [
         display: "Higher-order functions",
         fileName: "08_higher_order_functions.js"
     },
-    {
+ /*   {
         index: 6,
         display: "Closures",
         fileName: "09_closures.js"
-    },
+    },      */
     {
-        index: 7,
+        index: 6,
         display: "Method functions",
         fileName: "10_method_functions.js"
     },
     {
-        index: 8,
+        index: 7,
         display: "Prototypal inhertiance",
         fileName: "11_prototypal_inheritance.js"
     },
     {
-        index: 9,
-        display: "Contructors",
+        index: 8,
+        display: "Constructors",
         fileName: "12_constructors_private_functions.js"
     },
     {
-        index: 10,
-        display: "Classes",
+        index: 9,
+        display: "ES 2015 Classes",
         fileName: "13_classes.js"
     }
 ];

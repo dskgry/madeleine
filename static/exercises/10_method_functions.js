@@ -9,19 +9,19 @@ describe("", function () {
 
     it("Add a method 'customerToString' to your customer object. The method returns firstName, lastName and age as a comma-separated string", function () {
         var customer = window.customer;
-        expect(customer.customerToString().trim()).toBe(customer.firstName + "," + customer.lastName + "," + customer.age);
+        expect(customer.customerToString().replace(/ /g, "")).toBe((customer.firstName + "," + customer.lastName + "," + customer.age).replace(/ /g, ""));
     });
 
 
-    it("Extract the toString-method function from the customer-object so that it can be reused", function () {
+    it("Extract the 'customerToString' function from the customer-object so that it can be reused. (Make the function 'global')", function () {
         expect(!!window.customerToString).toBe(true);
-        expect(window.customerToString()).toBe("undefined,undefined,undefined");
+        expect(window.customerToString().replace(/ /g, "")).toBe("undefined,undefined,undefined");
     });
 
 
     it("Create another object 'anotherCustomer' that also uses the customerToString()-function as a method", function () {
         var customer = window.anotherCustomer;
-        expect(customer.customerToString().trim()).toBe(customer.firstName + "," + customer.lastName + "," + customer.age);
+        expect(customer.customerToString().replace(/ /g, "")).toBe((customer.firstName + "," + customer.lastName + "," + customer.age).replace(/ /g, ""));
     });
 
 });
