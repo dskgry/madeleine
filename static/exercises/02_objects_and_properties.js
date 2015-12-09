@@ -18,7 +18,6 @@ describe("", function () {
         window.customer.test = true;
         window.customer.name = "Test";
         expect(window.customer.test).toBe(undefined);
-        expect(window.customer.name).toBe("Lars Kölpin");
     });
 
 });

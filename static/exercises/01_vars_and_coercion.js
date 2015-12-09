@@ -36,23 +36,4 @@ describe("", function () {
         expect(window.hello).toBe("HELLO WORLD");
     });
 
-
-    it("Create a floating point number variable named 'floating'", function () {
-        expect((typeof window.floating).toLowerCase()).toBe("number");
-        expect((window.floating + "").indexOf(".") > -1).toBe(true);
-    });
-
-    it("Add at least 3 fractional digits to your 'floating' variable", function () {
-        expect((typeof window.floating).toLowerCase()).toBe("number");
-        expect((window.floating + "").indexOf(".") > -1).toBe(true);
-        expect((window.floating + "").split(".")[1].length > 2).toBe(true);
-    });
-
-    it("Create a variable 'rounded' which holds the value of 'floating' rounded to one fractional digit. (use the method toPrecision)", function () {
-        expect((typeof window.rounded).toLowerCase()).toBe("string");
-        expect((window.rounded + "").indexOf(".") > -1).toBe(true);
-        expect((window.rounded + "").split(".")[1].length === 1).toBe(true);
-    });
-
-
 });

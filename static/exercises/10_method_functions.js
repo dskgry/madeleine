@@ -19,9 +19,9 @@ describe("", function () {
     });
 
 
-    it("Create another object 'anotherCustomer' that also uses the customerToString()-function as a method", function () {
+ /*   it("Create another object 'anotherCustomer' that also uses the customerToString()-function as a method", function () {
         var customer = window.anotherCustomer;
         expect(customer.customerToString().replace(/ /g, "")).toBe((customer.firstName + "," + customer.lastName + "," + customer.age).replace(/ /g, ""));
-    });
+    });      */
 
 });

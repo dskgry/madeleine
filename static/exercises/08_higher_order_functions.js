@@ -27,9 +27,9 @@ describe("", function () {
     });
 
 
-    it("Create a function 'createAdder(n)' that returns a function that adds n to its ONE argument", function () {
+  /*  it("Create a function 'createAdder(n)' that returns a function that adds n to its ONE argument", function () {
         expect(window.createAdder(2)(1)).toBe(3);
-    });
+    });   */
 
 
 });
